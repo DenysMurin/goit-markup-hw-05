@@ -23,7 +23,7 @@ a {
   --lightslate: #8e8f99;
   --cornflower: #e7e9fc;
   --cloud: #f4f4fd;
-  --navybluemodal: #2e2f4266;
+  --navy-blue-modal: #2e2f4266;
   --grey: #2e2f42;
   --grey-70: rgba(46, 47, 66, 0.7);
   --white: #ffffff;
@@ -430,3 +430,71 @@ img {
   fill: var(--cloud);
 }
 /* !modal */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--navy-blue-modal);
+  /* animation */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250 ms ease-in-out, visibility 250ms ease-in-out;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: relative;
+  width: 408px;
+  height: 584px;
+  /* дополнительно */
+  max-height: 100%;
+  /* прокрутка */
+  overflow: auto;
+  background-color: var(--dairy);
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
+  padding: 72px 24px 24px;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0);
+}
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+.modal-field {
+  margin-bottom: 8px;
+}
+.modal-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.17;
+  display: block;
+  margin-bottom: 4px;
+}
+.modal-input {
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue-modal);
+  width: 360px;
+  height: 40px;
+  transition: border-color 250ms ;
+}
+.modal-input:focus,
+.modal-textarea:focus{
+  outline: none;
+  border-color: var(--iris);
+}
+.modal-textarea {
+  border-radius: 4px;
+  border: 1px solid var(--navy-blue-modal);
+  width: 360px;
+height: 138px;
+resize: none;
+transition: border-color 250ms ;
+}
