@@ -508,8 +508,14 @@
     <!-- TODO: is-hidden -->
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-close" type="button">X</button>
-        <h2>Leave your contacts and we will call you back</h2>
+        <button class="modal-close" type="button">
+          <div>
+            <svg class="modal-close-icon" width="" height="8">
+              <use href="./images/modal-icons.svg#icon-close"></use>
+            </svg>
+          </div>
+        </button>
+        <p>Leave your contacts and we will call you back</p>
         <form name="contact-form">
           <div class="modal-field">
             <label class="modal-label" for="user-name">Name</label>
