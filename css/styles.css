@@ -520,9 +520,6 @@ img {
 }
 .modal-close-icon{
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   transition: fill 250ms;
 }
 .modal-close-icon:hover{
