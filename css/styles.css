@@ -468,6 +468,14 @@ img {
   top: 24px;
   right: 24px;
 }
+.modal h2 {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+}
 .modal-field {
   margin-bottom: 8px;
 }
@@ -478,15 +486,30 @@ img {
   display: block;
   margin-bottom: 4px;
 }
+.modal-input-wrap {
+  position: relative;
+}
+.modal-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms;
+}
 .modal-input {
   border-radius: 4px;
   border: 1px solid var(--navy-blue-modal);
   width: 360px;
   height: 40px;
-  transition: border-color 250ms ;
+  padding: 0 0 0 38px;
+  transition: border-color 250ms;
+}
+/* должен меняться цвет */
+.modal-input:focus + .modal-input-icon {
+  fill: var(--iris);
 }
 .modal-input:focus,
-.modal-textarea:focus{
+.modal-textarea:focus {
   outline: none;
   border-color: var(--iris);
 }
@@ -494,7 +517,14 @@ img {
   border-radius: 4px;
   border: 1px solid var(--navy-blue-modal);
   width: 360px;
-height: 138px;
-resize: none;
-transition: border-color 250ms ;
+  height: 138px;
+  resize: none;
+  transition: border-color 250ms;
+}
+.modal-checkbox{
+  padding: 16px 0 24px 0;
+}
+.modal-button{
+  display: block;
+  margin: 0 auto;
 }
