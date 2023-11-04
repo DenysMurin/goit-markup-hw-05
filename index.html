@@ -502,12 +502,20 @@
         <div class="subscribe">
           <p class="footer-text-subscribe">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-label" for="">
-              <input class="subscribe-input" type="email" name="email"
-              placeholder="E-mail">
+            <!-- не нужен єтот класс -->
+            <label class="subscribe-label" for="email">
+              <input
+                class="subscribe-input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="subscribe-button" type="submit">Subscribe
-              
+              <svg class="subscribe-button-icon" width="24" height="24">
+                <use href="./images/social-icons.svg#icon-subscibe"></use>
+              </svg>
             </button>
           </form>
         </div>
