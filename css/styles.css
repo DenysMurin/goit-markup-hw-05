@@ -429,6 +429,50 @@ img {
 .icon-footer-fill {
   fill: var(--cloud);
 }
+/* subscribe */
+.footer-text-subscribe {
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.subscribe-form {
+  gap: 24px;
+  display: flex;
+}
+.subscribe-label {
+}
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: var(--green);
+}
+.subscribe-button{
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--iris);
+  border: none;
+  border-radius: 4px;
+}
 /* !modal */
 .backdrop {
   position: fixed;
@@ -508,8 +552,6 @@ img {
 .modal-close-icon:focus {
   fill: var(--white);
 } */
-
-
 
 /* text and area */
 .modal-text {
